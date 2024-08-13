@@ -274,44 +274,6 @@
 					  });
 					}
 			</script>
-			<script src="https://smtpjs.com/v3/smtp.js"></script>
-			<script>
-				function sendEmail(){
-					Email.send({
-					Host : "smtp.gmail.com",
-					Username : "michaelrenaud69@gmail.com",
-					Password : "Harmony869!!",
-					To : 'michaelrenaud69@gmail.com',
-					From : document.getElementById("email").value,
-					Subject : "Email from TechDocHub",
-					Body : "And this is the body"
-				}).then(
-				message => alert(message)
-				);
-				}
-			</script>
-			<script>
-				var popupForm = document.querySelector("form");
-				var popupButton = popupForm.querySelector("button");
-					 popupButton.addEventListener('click', function (e) {
-						  e.preventDefault();
-						  var popupEmail = popupForm.querySelector("#email").value;
-						  var popupName = popupForm.querySelector("#first_name").value;
-
-						  var event_data = {
-							   event_name: "popup_sent",
-							   email: popupEmail,
-							   name: popupName
-							   }
-
-						  window.top.UE.pageHit({'apiKey':put_api_key_of_your_app_here,
-							   'email': popupEmail,
-							   'name': popupName,
-							   'event': event_data
-							   });  
-						  document.getElementById('my_form').style.display = 'none';
-						  document.getElementById('thank_you').style.display = 'block';
-					 });
-</script>
+			
 	</body>
 </html>
